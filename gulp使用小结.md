@@ -117,5 +117,6 @@
 		gulp.watch('./js/*.js',browserSync.reload);
 	    gulp.watch('./css/*.css',browserSync.reload);
 	    gulp.watch("./*.html",browserSync.reload);
-	});
+	}); 
+
 
