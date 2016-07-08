@@ -72,4 +72,4 @@ promise对象也支持链式的then操作，在回调函数中使用return来传
 	}])
 </pre>
 
-** 更多的例子在angular-test中$q文件夹中，其中包括链式操作和Ajax异步请求 **
+** 更多的例子在angular-test中promise文件夹中，其中包括链式操作和Ajax异步请求 **
