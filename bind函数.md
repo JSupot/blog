@@ -1,11 +1,12 @@
 ###实现bind
 代码如下：  
 <pre>
-Function.prototype.bind = Function.prototype.bind || function (context) {
+Function.prototype.bind = Function.prototype.bind || function () {
   var that = this;
 
   //除去上下文变量
-  var outArg = Array.prototype.slice.call(arguments, 1);
+  var outArg = Array.prototype.slice.call(arguments);
+  var context = outArg.shift();
 
   return function() {
     var innerArg = Array.prototype.slice.call(arguments);
